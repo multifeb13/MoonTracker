@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MoonTracker</string>
+    <string name="strToastCopyTodaysMoonToClipboard">クリップボードにコピーしました</string>
+    <string name="strToastGoogleMapNotFound">GoogleMapが見つかりません</string><string name="strDialogTitleSetDate">日付を入力してください</string>
+    <string name="strDialogTitleSetTime">時刻を入力してください</string>
+    
+    <color name="kColorGreenDroid">#ffa4c639</color>
+    <color name="kColorBlack">#ff101010</color>
+    <color name="kColorLightWhite">#ffcecece</color>
+    <color name="kColorDefaultFont">#ffbdbdbd</color>
+    
+    <color name="kColorMenuBackgroundTop">#ffdddddd</color>
+    <color name="kColorMenuBackgroundBottom">#80a4c639</color>
+    <color name="kColorFontForeground">#ff333333</color>
+
+    <string name="strLayoutCurrentDateTimeTitle">日時@</string>
+    <string name="strLayoutCurrentDate">&quot;0000/00/00 &quot;</string>
+    <string name="strLayoutCurrentTime">00:00:00</string>
+
+    <string name="strLayoutLocateHereTitle">位置@</string>
+    <string name="strLayoutLocateHereBody" >東経:%1$s / 北緯:%2$s</string>
+
+    <string name="strLayoutMoonRiseTitle"    >"出　@"</string>
+    <string name="strLayoutMoonMeridianTitle">"南中@"</string>
+    <string name="strLayoutMoonSetTitle"     >"入　@"</string>
+    <string name="strLayoutMoonRise"    >"方位角:000.00(　　　) / 時刻 00:00"</string>
+    <string name="strLayoutMoonMeridian">"方位角:000.00(　　　) / 時刻 00:00"</string>
+    <string name="strLayoutMoonSet"     >"方位角:000.00(　　　) / 時刻 00:00"</string>
+    
+    <string name="strLayoutCoordinateMoonTitle"  >"月　@"</string>
+    <string name="strLayoutCoordinateDeviceTitle">"端末@"</string>
+    <string name="strLayoutCoordinateMoon"  >"方位角:000.00(　　　) / 高度角:000.000"</string>
+    <string name="strLayoutCoordinateDevice">"方位角:000.00(　　　) / 高度角:000.000"</string>
+
+    <string name="strLayoutMoonAgeTitle">"月齢@"</string>
+    <string name="strLayoutMoonAge">"00.0(　　　)"</string>
+    
+    <string name="strDescriptionTitle">MoonTracker</string>
+    <string name="strDescriptionResumeUpdate">"Resume Update"</string>
+
+    <string name="strDescriptionDate">日付を指定</string>
+    <string name="strDescriptionCamera">カメラを起動</string>
+    <string name="strDescriptionPlace">位置を指定</string>
+    <string name="strDescriptionShare">[今日の月]を共有</string>
+    
+</resources>

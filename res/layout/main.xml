@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLayerMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/kColorBlack"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLayerMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/kColorMenuBackgroundTop"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/strDescriptionTitle"
+                    android:src="@drawable/ic_menu_title" />
+
+                <TextView
+                    android:id="@+id/txtMenuTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="@color/kColorFontForeground" />
+
+                <ImageView
+                    android:id="@+id/imageMenuDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/strDescriptionDate"
+                    android:onClick="onClickMenu"
+                    android:src="@drawable/ic_action_event" />
+
+                <ImageView
+                    android:id="@+id/imageMenuPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/strDescriptionPlace"
+                    android:onClick="onClickMenu"
+                    android:src="@drawable/ic_action_place" />
+
+                <ImageView
+                    android:id="@+id/imageMenuShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/strDescriptionShare"
+                    android:onClick="onClickMenu"
+                    android:src="@drawable/ic_action_share" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCurrentDateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtCurrentDateTimeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/kColorBlack"
+                    android:text="@string/strLayoutCurrentDateTimeTitle"
+                    android:textColor="@color/kColorDefaultFont" />
+
+                <TextView
+                    android:id="@+id/txtCurrentDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/strLayoutCurrentDate" />
+
+                <TextView
+                    android:id="@+id/txtCurrentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:text="@string/strLayoutCurrentTime" />
+
+                <ImageView
+                    android:id="@+id/imgResumeUpdateDateTime"
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:baselineAlignBottom="false"
+                    android:clickable="true"
+                    android:contentDescription="@string/strDescriptionResumeUpdate"
+                    android:onClick="onClick"
+                    android:src="@drawable/ic_action_backspace"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+
+<!--            
+            <View
+                android:id="@+id/Separator"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="#DDFFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutLocateHere"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txtLocateHereTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/kColorBlack"
+                    android:text="@string/strLayoutLocateHereTitle"
+                    android:textColor="@color/kColorDefaultFont" />
+
+                <TextView
+                    android:id="@+id/txtLocateHereBody"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/ic_action_next_item_textview_drawable"
+                    android:text="@string/strLayoutLocateHereBody" />
+            </LinearLayout>
+-->
+  
+            <View
+                android:id="@+id/View01"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="#DDFFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutRiseSet"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtMoonRiseTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/kColorBlack"
+                        android:text="@string/strLayoutMoonRiseTitle"
+                        android:textColor="@color/kColorDefaultFont" />
+
+                    <TextView
+                        android:id="@+id/txtMoonRise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strLayoutMoonRise" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtMoonMeridianTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/kColorBlack"
+                        android:text="@string/strLayoutMoonMeridianTitle"
+                        android:textColor="@color/kColorDefaultFont" />
+
+                    <TextView
+                        android:id="@+id/txtMoonMeridian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strLayoutMoonMeridian" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtMoonSetTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/kColorBlack"
+                        android:text="@string/strLayoutMoonSetTitle"
+                        android:textColor="@color/kColorDefaultFont" />
+
+                    <TextView
+                        android:id="@+id/txtMoonSet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strLayoutMoonSet" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View02"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="#DDFFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutCoordinate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCoordinateMoonTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/kColorBlack"
+                        android:text="@string/strLayoutCoordinateMoonTitle"
+                        android:textColor="@color/kColorDefaultFont" />
+
+                    <TextView
+                        android:id="@+id/txtCoordinateMoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strLayoutCoordinateMoon" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/txtCoordinateDeviceTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/kColorBlack"
+                        android:text="@string/strLayoutCoordinateDeviceTitle"
+                        android:textColor="@color/kColorDefaultFont" />
+
+                    <TextView
+                        android:id="@+id/txtCoordinateDevice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strLayoutCoordinateDevice" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/Separator3"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="#DDFFFFFF" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutMoonAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txtMoonAgeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/kColorBlack"
+                    android:text="@string/strLayoutMoonAgeTitle"
+                    android:textColor="@color/kColorDefaultFont" />
+
+                <TextView
+                    android:id="@+id/txtMoonAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strLayoutMoonAge" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/View03"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:background="#DDFFFFFF" />
+
+            <com.alt_r.www.multi.moontracker.CompassView
+                android:id="@+id/viewCompass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutLayerMenuBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom" >
+
+            <ImageView
+                android:id="@+id/imageMenuCamera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/kColorMenuBackgroundBottom"
+                android:clickable="true"
+                android:contentDescription="@string/strDescriptionCamera"
+                android:onClick="onClickMenu"
+                android:src="@drawable/ic_action_camera" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
